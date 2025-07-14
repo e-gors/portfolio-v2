@@ -1,7 +1,11 @@
+import Homepage from "./client/Homepage/Homepage"
+import Navbar from "./global/layout/Navbar"
+
 function App() {
   return (
     <>
-      <h1>Testing</h1>
+    <Navbar />
+     <Homepage />
     </>
   )
 }

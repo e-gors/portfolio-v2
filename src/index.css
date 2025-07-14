@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+#root {
+    background-color: #355070;
+    min-height: 800px;
+}
