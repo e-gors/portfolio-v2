@@ -13,11 +13,11 @@ export default function Navbar() {
 
   return (
     <header className="w-full bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav className="mx-auto px-4 sm:px-6 lg:px-25">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="#" className="text-xl font-semibold text-gray-900">
-            <img src={Logo} alt="Logo" className="" />
+            <img src={Logo} alt="Logo" className="w-12" />
             </a>
           </div>
 
@@ -83,6 +83,7 @@ export default function Navbar() {
               {l.name}
             </a>
           ))}
+          <button className="">Contact Me</button>
         </div>
       </div>
     </header>
