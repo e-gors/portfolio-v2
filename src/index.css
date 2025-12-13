@@ -1,6 +1,185 @@
+/* Import tailwind */
 @import "tailwindcss";
 
+/* removing spaces */
 body {
   padding: 0;
   margin: 0;
+}
+
+/* Creating own styling */
+/* Overriding Tailwind style */
+
+@theme {
+  /* ===============================
+     Base Colors (single source)
+     =============================== */
+  --color-navy-900: #0d1a28;
+  --color-navy-800: #0f2235;
+  --color-navy-700: #111f2f;
+  --color-navy-600: #121e2c;
+  --color-navy-500: #1f2a37;
+
+  --color-gold-500: #e0a03f;
+  --color-gold-400: #f3c97a;
+
+  --color-white: #f8fafc;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #64748b;
+
+  --color-shadow: rgba(0, 0, 0, 0.4);
+
+  /* ===============================
+     Background Colors (semantic)
+     =============================== */
+  --bg-primary: var(--color-navy-900);
+  --bg-primary-soft: var(--color-navy-700);
+  --bg-section: var(--color-navy-800);
+  --bg-card: var(--color-navy-600);
+
+  --card-border-subtle: var(--color-navy-500);
+  --card-shadow: var(--color-shadow);
+
+  /* ===============================
+     Text Colors (semantic)
+     =============================== */
+  --text-primary: var(--color-white);
+  --text-secondary: var(--color-slate-400);
+  --text-muted: var(--color-slate-500);
+
+  --text-accent: var(--color-gold-500);
+  --text-soft: var(--color-gold-400);
+
+  /* ===============================
+     Button Colors
+     =============================== */
+  /* Filled */
+  --btn-bg-accent: var(--color-gold-500);
+  --btn-accent: var(--color-gold-500);
+  --btn-accent-hover: var(--color-gold-400);
+
+  /* Outline */
+  --btn-border-accent: var(--color-gold-500);
+  --btn-bg-hover-accent: var(--color-gold-500);
+  --btn-text-hover-outline: var(--color-white);
+}
+
+/*  */
+@layer utilities {
+  /* Backgrounds */
+  .bg-primary {
+    background-color: var(--bg-primary);
+  }
+
+  .bg-primary-soft {
+    background-color: var(--bg-primary-soft);
+  }
+
+  .bg-section {
+    background-color: var(--bg-section);
+  }
+
+  .bg-card {
+    background-color: var(--bg-card);
+  }
+
+  /* Text */
+  .text-primary {
+    color: var(--text-primary);
+  }
+
+  .text-secondary {
+    color: var(--text-secondary);
+  }
+
+  .text-muted {
+    color: var(--text-muted);
+  }
+
+  .text-accent {
+    color: var(--text-accent);
+  }
+
+  .text-soft {
+    color: var(--text-soft);
+  }
+
+  /* Borders & Shadows */
+  .border-subtle {
+    border-color: var(--border-subtle);
+  }
+
+  .shadow-card {
+    box-shadow: 0 10px 30px var(--shadow-card);
+  }
+
+  /* Buttons */
+  .btn-accent {
+    background-color: var(--btn-accent);
+    color: #0d1a28;
+    font-weight: 600;
+    border-radius: 0.75rem;
+    padding: 0.65rem 1.5rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .btn-accent:hover {
+    background-color: var(--btn-accent-hover);
+    transform: translateY(-1px);
+  }
+
+  .btn-outline {
+    border: 1px solid var(--btn-accent);
+    color: var(--btn-accent);
+    border-radius: 0.75rem;
+    padding: 0.65rem 1.5rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+
+  .btn-outline:hover {
+    background-color: var(--btn-accent);
+    color: var(--text-primary);
+  }
+
+  .nav-link {
+    color: var(--text-primary);
+    transition: color 0.15s ease;
+  }
+
+  .nav-link:hover {
+    color: var(--text-accent);
+  }
+}
+
+/* ===============================
+   Tailwind Layers
+   =============================== */
+@layer base {
+  body {
+    background-color: var(--bg-primary-soft);
+    color: var(--text-secondary);
+  }
+}
+
+/* overriding styles when on light mode */
+.light {
+  --bg-primary: #ffffff;
+  --bg-primary-soft: #f8fafc;
+  --bg-section: #f1f5f9;
+  --bg-card: #ffffff;
+
+  --border-subtle: #e2e8f0;
+  --shadow-card: rgba(0, 0, 0, 0.08);
+
+  --text-primary: #0d1a28;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+
+  --text-accent: #c4831f;
+  --text-soft: #e0a03f;
+
+  --btn-accent: #e0a03f;
+  --btn-accent-hover: #c4831f;
 }
