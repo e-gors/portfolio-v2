@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbar />
       <CursorBubbles /> 
-      <main className="container mx-auto px-6 lg:px-10">
+      <main className="container mx-auto px-6 lg:px-10 pt-[60px]">
        <Hero />
        <About />
        <Experiences />
