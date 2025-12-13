@@ -112,6 +112,10 @@ html {
     border-color: var(--border-subtle);
   }
 
+  .border-accent {
+    border-color: var(--btn-accent);
+  }
+
   .shadow-card {
     box-shadow: 0 10px 30px var(--shadow-card);
   }
