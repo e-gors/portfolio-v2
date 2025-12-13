@@ -2,10 +2,12 @@
 @import "tailwindcss";
 
 /* removing spaces */
-body, html {
+body,
+html {
   padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; /* adding smooth scroll behavior */
+  overflow-x: hidden;
 }
 
 /* Creating own styling */
@@ -65,7 +67,7 @@ body, html {
   --btn-text-hover-outline: var(--color-white);
 }
 
-/*  */
+/* custom classes */
 @layer utilities {
   /* Backgrounds */
   .bg-primary {
@@ -207,7 +209,7 @@ body, html {
   justify-content: center;
 
   text-decoration: none;
-  color: #fff; 
+  color: #fff;
   font-size: 2rem;
   cursor: pointer;
 
@@ -216,7 +218,7 @@ body, html {
   backdrop-filter: blur(4px);
   border-radius: 0.5rem;
 
-  box-shadow: 0px calc(50/6) calc(var(--size)/3) rgba(0,0,0,0.1);
+  box-shadow: 0px calc(50 / 6) calc(var(--size) / 3) rgba(0, 0, 0, 0.1);
   overflow: hidden;
 
   transition: transform var(--transition-duration) var(--transition-easing);
@@ -224,7 +226,7 @@ body, html {
 
 /* Diagonal swipe overlay */
 .icon::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: -125%;
@@ -253,4 +255,88 @@ body, html {
   pointer-events: none;
 }
 
+/* Custom background animations */
+
+.sphere {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Move spheres relative to hero section */
+.sphere-1 {
+  background: radial-gradient(circle, #ff28d5, #ff28d5);
+  /* initial position */
+
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
+  animation: wander-left 10s ease-in-out infinite;
+}
+
+.sphere-2 {
+  background: radial-gradient(circle, #28d4ff, #28d4ff);
+  /* initial position */
+  bottom: 0;
+  right: 0;
+  transform: translate(0, 0);
+  animation: wander-right 10s ease-in-out infinite;
+}
+
+/* subtle wandering animations */
+@keyframes wander-left {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(200%, 500px);
+  }
+}
+
+@keyframes wander-right {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-200%, -500px);
+  }
+}
+
+
+/* Cursor Bubbles */
+
+.cursor-bubbles-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cursor-bubble {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.8),
+    rgba(173, 216, 230, 0.6),
+    rgba(138, 43, 226, 0.4)
+  );
+
+  filter: blur(6px);
+  opacity: 0.8;
+
+  transform: translate(0, 0) scale(1);
+  transition:
+    transform 1.5s ease-out,
+    opacity 1.5s ease-out;
+}
 
