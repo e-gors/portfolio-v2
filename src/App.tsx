@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbar />
       <CursorBubbles /> 
-      <main className="container mx-auto px-6 lg:px-10 pt-[60px]">
+      <main className="min-w-screen container pt-[60px]">
        <Hero />
        <About />
        <Experiences />
