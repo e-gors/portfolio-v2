@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import HeroImage from "@images/hero-image.png";
 import WavingHand from "@images/waving-hand.png";
 import GithubRoundedIcon from "@icons/GithubRoundedIcon";
@@ -6,14 +6,39 @@ import FacebookRoundedIcon from "@icons/FacebookRoundedIcon";
 import LinkedInRoundedIcon from "@icons/LinkedInRoundedIcon";
 import DiscordRoundedIcon from "@icons/DiscordRoundedIcon";
 import GradientSphere from "../components/GradientSphere";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(useGSAP);
 
 export default function Hero() {
+  const handRef = useRef<HTMLImageElement | null>(null);
+
+  useGSAP(() => {
+    gsap.to(handRef.current, {
+      rotation: 20,
+      yoyo: true,
+      repeat: -1,
+      duration: 0.5,
+      ease: "power1.inOut",
+      transformOrigin: "70% 70%",
+    });
+  });
+
   return (
-    <section id="home" className="container relative mx-auto min-h-[calc(100vh-64px)] flex flex-col lg:flex-row items-center justify-center px-4 py-12 gap-8 md:gap-12">
+    <section
+      id="home"
+      className="container relative mx-auto min-h-[calc(100vh-64px)] flex flex-col lg:flex-row items-center justify-center px-4 py-12 gap-8 md:gap-12"
+    >
       <div className="left w-full lg:w-1/2 flex flex-col items-center md:items-start md:text-left gap-4">
         <div className="w-full flex items-center gap-2">
           <p className="text-base md:text-lg">Hello,</p>
-          <img src={WavingHand} alt="Waving Hand" className="w-6 md:w-10" />
+          <img
+           ref={handRef}
+            src={WavingHand}
+            alt="Waving Hand"
+            className="w-6 md:w-10"
+          />
           <p className="text-base md:text-lg">I'm</p>
         </div>
         <h1 className="w-full text-3xl md:text-6xl leading-normal font-bold">
