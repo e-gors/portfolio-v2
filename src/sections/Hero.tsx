@@ -5,6 +5,7 @@ import GithubRoundedIcon from "@icons/GithubRoundedIcon";
 import FacebookRoundedIcon from "@icons/FacebookRoundedIcon";
 import LinkedInRoundedIcon from "@icons/LinkedInRoundedIcon";
 import DiscordRoundedIcon from "@icons/DiscordRoundedIcon";
+import GradientSphere from "../components/GradientSphere";
 
 export default function Hero() {
   return (
@@ -48,6 +49,9 @@ export default function Hero() {
           className="max-w-full h-auto w-[280px] md:w-[420px] lg:w-[520px]"
         />
       </div>
+
+      {/* Gradient Spheres */}
+      <GradientSphere firstSphere="sphere-1" secondSphere="sphere-2" />
     </section>
   );
 }
