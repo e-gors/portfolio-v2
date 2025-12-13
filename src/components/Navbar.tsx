@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/images/logos/egoronweb-logo.png";
+import Logo from "../assets/logos/egoronweb-logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -12,11 +12,11 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50">
-      <nav className="mx-auto px-4 sm:px-6 lg:px-25">
+    <header className="w-full bg-section backdrop-blur-sm shadow-sm sticky top-0 z-50">
+      <nav className="mx-auto px-6 lg:px-20">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="#" className="text-xl font-semibold text-gray-900">
+            <a href="#">
             <img src={Logo} alt="Logo" className="w-12" />
             </a>
           </div>
@@ -26,11 +26,13 @@ export default function Navbar() {
               <a
                 key={l.name}
                 href={l.href}
-                className="text-gray-700 hover:text-gray-900 transition-colors duration-150"
+                className="nav-link transition-colors duration-150"
               >
                 {l.name}
               </a>
             ))}
+            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <button className="btn-outline">Contact Me</button></a>
           </div>
 
           <div className="md:hidden">
@@ -38,7 +40,7 @@ export default function Navbar() {
               onClick={() => setOpen((s) => !s)}
               aria-label="Toggle menu"
               aria-expanded={open}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-secondary hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             >
               <span className="sr-only">Open main menu</span>
               {/* Burger icon */}
@@ -78,12 +80,11 @@ export default function Navbar() {
               key={l.name}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:bg-gray-100"
+              className="block px-3 py-2 rounded-md text-base font-medium text-secondary hover:bg-white/5"
             >
               {l.name}
             </a>
           ))}
-          <button className="">Contact Me</button>
         </div>
       </div>
     </header>
