@@ -8,7 +8,7 @@ import DiscordRoundedIcon from "@icons/DiscordRoundedIcon";
 
 export default function Hero() {
   return (
-    <section className="container relative mx-auto min-h-[calc(100vh-64px)] flex flex-col lg:flex-row items-center justify-center px-4 py-12 gap-8 md:gap-12">
+    <section id="home" className="container relative mx-auto min-h-[calc(100vh-64px)] flex flex-col lg:flex-row items-center justify-center px-4 py-12 gap-8 md:gap-12">
       <div className="left w-full lg:w-1/2 flex flex-col items-center md:items-start md:text-left gap-4">
         <div className="w-full flex items-center gap-2">
           <p className="text-base md:text-lg">Hello,</p>
@@ -26,14 +26,18 @@ export default function Hero() {
           Aims to deliver high-quality web solutions tailored to your needs.
         </p>
         <div className="flex gap-x-4 h-20">
-          <FacebookRoundedIcon width={40} />
-          <GithubRoundedIcon width={60} />
-          <LinkedInRoundedIcon width={40} />
-          <DiscordRoundedIcon width={40} />
-        </div>
-        <div className="flex gap-x-4">
-          <button className="btn-outline">Download CV</button>
-          <button className="btn-outline">Hire Me</button>
+          <div className="icon">
+            <FacebookRoundedIcon width={40} height={40} />
+          </div>
+          <div className="icon">
+            <GithubRoundedIcon width={60} />
+          </div>
+          <div className="icon">
+            <LinkedInRoundedIcon width={40} />
+          </div>
+          <div className="icon">
+            <DiscordRoundedIcon width={40} />
+          </div>
         </div>
       </div>
 
