@@ -16,12 +16,12 @@ export default function About() {
     >
       <TitleHeader title="About Me" number="01" />
 
-      <div className="content flex flex-wrap flex-col lg:flex-row pt-10">
+      <div className="content flex flex-wrap flex-col lg:flex-row pt-10 items-center justify-center">
         <div className="left flex-1 justify-center md:px-2 pb-5 lg:pb-0">
           <img
             src={AboutImage}
             alt="About Me"
-            className="max-w-full h-auto w-auto md:w-auto lg:w-[520px]"
+            className="max-w-full h-auto w-[280px] md:w-[420px] lg:w-[520px]"
           />
         </div>
         <div className="right flex-1 space-y-4">

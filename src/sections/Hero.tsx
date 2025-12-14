@@ -37,7 +37,7 @@ export default function Hero() {
       id="home"
       className="w-screen container relative mx-auto min-h-[calc(100vh-64px)] flex flex-col lg:flex-row items-center justify-center px-4 md:px-10 py-12 gap-8 md:gap-12"
     >
-      <div className="left w-full lg:w-1/2 flex flex-col items-center md:items-start md:text-left gap-4">
+      <div className="left w-full lg:w-1/2 flex flex-col md:items-start md:text-left gap-4">
         <div className="w-full flex items-center gap-2">
           <p className="text-base md:text-lg">Hello,</p>
           <img
