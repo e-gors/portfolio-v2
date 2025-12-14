@@ -125,7 +125,7 @@ html {
     background-color: var(--btn-accent);
     color: #0d1a28;
     font-weight: 600;
-    border-radius: 0.75rem;
+    border-radius: 0.30rem;
     padding: 0.65rem 1.5rem;
     transition: all 0.2s ease;
     cursor: pointer;
@@ -139,7 +139,7 @@ html {
   .btn-outline {
     border: 1px solid var(--btn-accent);
     color: var(--btn-accent);
-    border-radius: 0.75rem;
+    border-radius: 0.30rem;
     padding: 0.65rem 1.5rem;
     transition: all 0.2s ease;
     cursor: pointer;
