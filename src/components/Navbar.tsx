@@ -32,7 +32,7 @@ export default function Navbar() {
               </a>
             ))}
             <a href="http://" target="_blank" rel="noopener noreferrer">
-            <button className="btn-outline">Contact Me</button></a>
+            <button className="btn-accent">Contact Me</button></a>
           </div>
 
           <div className="md:hidden">
