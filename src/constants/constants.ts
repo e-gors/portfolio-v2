@@ -102,3 +102,39 @@ export const TECH_STACKS = [
     Icon: WordpressIcon,
   },
 ];
+
+export const workExperience = [
+  {
+    title: "Junior Full Stack Engineer",
+    company: "JLabs",
+    date: "Nov 2024 - Apr 2025",
+    description: "Working with React and NestJS to develop web applications.",
+  },
+  {
+    title: "Junior Fullstack Web Developer",
+    company: "CreativeDevLabs",
+    date: "Nov 2022 - Jan 2023",
+    description: "Assisted in building ticketing platforms and APIs.",
+  },
+  {
+    title: "Intern - Fullstack Web Developer",
+    company: "MLG College of Learning, Inc.",
+    date: "July 2022 - Sept 2022",
+    description: "Developed seamless website frontend and backend for managing student records.",
+  },
+];
+
+export const education = [
+  {
+    degree: "Bachelor of Science in Information Technology",
+    school: "MLG College of Learning, Inc.",
+    date: "2019 - 2023",
+    description: "Graduated with Latin Honors, focused on web development.",
+  },
+  {
+    degree: "High School Diploma",
+    school: "Hilongos National Vocational School",
+    date: "2016 - 2019",
+    description: "Completed secondary education with a focus on science and technology.",
+  },
+];
