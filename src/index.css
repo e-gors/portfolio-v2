@@ -32,6 +32,13 @@ html {
 
   --color-black: #000000;
 
+  /* sphere colors */
+  --color-pink: #9e1583;
+  --color-blue: #15839e;
+
+  /* --color-blue: #28d4ff; */
+  /* --color-pink: #ff28d5; */
+
   --color-shadow: rgba(0, 0, 0, 0.4);
 
   /* ===============================
@@ -56,6 +63,9 @@ html {
   --text-soft: var(--color-gold-400);
 
   --text-black: var(--color-black);
+
+  --text-pink: var(--color-pink);
+  --text-blue: var(--color-blue);
 
   /* ===============================
      Button Colors
@@ -221,8 +231,8 @@ html {
   font-size: 2rem;
   cursor: pointer;
 
-  border: 1px solid rgba(224, 160, 63, 0.6);
-  background-color: rgba(13, 26, 40, 0.1);
+  /* border: 1px solid rgba(224, 160, 63, 0.6); */
+  /* background-color: rgba(13, 26, 40, 0.1); */
   backdrop-filter: blur(4px);
   border-radius: 0.5rem;
 
@@ -263,6 +273,65 @@ html {
   pointer-events: none;
 }
 
+/* Stack Icons */
+/* Container for all icons */
+.stack-icon-container {
+  animation: carousel 25s linear infinite;
+}
+
+/* Each icon wrapper */
+.stack-icon {
+  --size: 6rem;
+  --transition-duration: 500ms;
+  --transition-easing: ease-out;
+
+  position: relative;
+
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+
+  /* background-color: rgba(13, 26, 40, 0.1); */
+  backdrop-filter: blur(4px);
+  border-radius: 0.5rem;
+
+  box-shadow: 0px calc(50 / 6) calc(var(--size) / 3) rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  transition: transform var(--transition-duration) var(--transition-easing);
+}
+
+/* Diagonal swipe overlay */
+.stack-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -125%;
+  width: 60%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: skew(45deg);
+  transition: left var(--transition-duration) var(--transition-easing);
+}
+
+/* Hover effect */
+.stack-icon:hover {
+  transform: translateY(-25%);
+}
+
+.stack-icon:hover::before {
+  left: 150%;
+}
+
+/* Icon inside (SVG or image) stays on top */
+.stack-icon img,
+.stack-icon svg {
+  width: 60%;
+  height: 60%;
+  z-index: 1;
+  pointer-events: none;
+}
+
 /* Custom background animations */
 
 .sphere {
@@ -277,7 +346,7 @@ html {
 
 /* Move spheres relative to hero section */
 .sphere-1 {
-  background: radial-gradient(circle, #ff28d5, #ff28d5);
+  background: radial-gradient(circle, var(--text-pink), var(--text-pink));
   /* initial position */
   top: 0;
   left: 0;
@@ -286,7 +355,7 @@ html {
 }
 
 .sphere-2 {
-  background: radial-gradient(circle, #28d4ff, #28d4ff);
+  background: radial-gradient(circle, var(--text-blue), var(--text-blue));
   /* initial position */
   bottom: 0;
   right: 0;
@@ -295,7 +364,7 @@ html {
 }
 
 .sphere-3 {
-  background: radial-gradient(circle, #ff28d5, #ff28d5);
+  background: radial-gradient(circle, var(--text-pink), var(--text-pink));
   /* initial position */
   bottom: 15%;
   right: 25%;
@@ -304,7 +373,7 @@ html {
 }
 
 .sphere-4 {
-  background: radial-gradient(circle, #28d4ff, #28d4ff);
+  background: radial-gradient(circle, var(--text-blue), var(--text-blue));
   /* initial position */
   top: 15%;
   left: 25%;
@@ -381,3 +450,14 @@ html {
   transform: translate(0, 0) scale(1);
   transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
+
+/* scroll type animations on tech stacks */
+@keyframes carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
