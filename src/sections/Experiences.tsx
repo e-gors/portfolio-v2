@@ -10,7 +10,7 @@ import TitleHeader from "../components/TitleHeader";
 
 const Experiences = () => {
   return (
-    <section className="w-screen bg-primary relative mx-auto px-4 md:px-10 lg:px-20 py-12 gap-8 md:gap-12 z-1">
+    <section id="experiences" className="w-screen relative mx-auto px-4 md:px-10 lg:px-20 py-12 gap-8 md:gap-12 z-1">
       <TitleHeader title="My Experiences" number="02" />
       <div className="flex flex-wrap flex-col md:flex-row space-y-16 gap:5 md:gap-10">
         {/* Work Experience */}
