@@ -1,20 +1,19 @@
 import React, { useRef } from "react";
 import HeroImage from "@images/hero-image.png";
 import WavingHand from "@images/waving-hand.png";
-import GithubRoundedIcon from "@icons/GithubRoundedIcon";
-import FacebookRoundedIcon from "@icons/FacebookRoundedIcon";
-import LinkedInRoundedIcon from "@icons/LinkedInRoundedIcon";
-import DiscordRoundedIcon from "@icons/DiscordRoundedIcon";
 import GradientSphere from "../components/GradientSphere";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import ArrowDownRoundedIcon from "../assets/icons/ArrowDownRoundedIcon";
 
 gsap.registerPlugin(useGSAP);
 
 export default function Hero() {
   const handRef = useRef<HTMLImageElement | null>(null);
+  const arrowRef = useRef<SVGSVGElement | null>(null);
 
   useGSAP(() => {
+    // arrow waving
     gsap.to(handRef.current, {
       rotation: 20,
       yoyo: true,
@@ -22,6 +21,14 @@ export default function Hero() {
       duration: 0.5,
       ease: "power1.inOut",
       transformOrigin: "70% 70%",
+    });
+    // arrow bouncing
+    gsap.to(arrowRef.current, {
+      y: -5,
+      yoyo: true,
+      repeat: -1,
+      duration: 1,
+      ease: "power1.inOut",
     });
   });
 
@@ -34,7 +41,7 @@ export default function Hero() {
         <div className="w-full flex items-center gap-2">
           <p className="text-base md:text-lg">Hello,</p>
           <img
-           ref={handRef}
+            ref={handRef}
             src={WavingHand}
             alt="Waving Hand"
             className="w-6 md:w-10"
@@ -51,19 +58,14 @@ export default function Hero() {
           learning new trends and technologies to continuously improve skills.
           Aims to deliver high-quality web solutions tailored to your needs.
         </p>
-        <div className="flex gap-x-4 h-20">
-          <div className="icon">
-            <FacebookRoundedIcon width={40} height={40} />
-          </div>
-          <div className="icon">
-            <GithubRoundedIcon width={60} />
-          </div>
-          <div className="icon">
-            <LinkedInRoundedIcon width={40} />
-          </div>
-          <div className="icon">
-            <DiscordRoundedIcon width={40} />
-          </div>
+        <div className="flex gap-x-4">
+          <button className="btn-accent">Services</button>
+          <button className="btn-outline">My Work</button>
+        </div>
+
+        <div className="w-100 px-4 flex items-center gap-2 mt-4 absolute bottom-4">
+          <p className="text-base text-nowrap">Explore</p>
+          <ArrowDownRoundedIcon ref={arrowRef} width={32} height={32} />
         </div>
       </div>
 
