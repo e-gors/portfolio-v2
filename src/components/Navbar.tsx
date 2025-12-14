@@ -12,7 +12,7 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="w-full bg-section backdrop-blur-sm shadow-sm sticky top-0 z-50">
+    <header className="w-full bg-section backdrop-blur-sm shadow-sm fixed top-0 z-50">
       <nav className="mx-auto px-6 lg:px-20">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
