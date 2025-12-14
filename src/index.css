@@ -129,8 +129,8 @@ html {
     background-color: var(--btn-accent);
     color: #0d1a28;
     font-weight: 600;
-    border-radius: 0.30rem;
-    padding: 0.60rem 1.2rem;
+    border-radius: 0.3rem;
+    padding: 0.6rem 1.2rem;
     transition: all 0.2s ease;
     cursor: pointer;
   }
@@ -143,8 +143,8 @@ html {
   .btn-outline {
     border: 1px solid var(--btn-accent);
     color: var(--btn-accent);
-    border-radius: 0.30rem;
-    padding: 0.60rem 1.2rem;
+    border-radius: 0.3rem;
+    padding: 0.6rem 1.2rem;
     transition: all 0.2s ease;
     cursor: pointer;
   }
@@ -279,7 +279,6 @@ html {
 .sphere-1 {
   background: radial-gradient(circle, #ff28d5, #ff28d5);
   /* initial position */
-
   top: 0;
   left: 0;
   transform: translate(0, 0);
@@ -293,6 +292,24 @@ html {
   right: 0;
   transform: translate(0, 0);
   animation: wander-right 10s ease-in-out infinite;
+}
+
+.sphere-3 {
+  background: radial-gradient(circle, #ff28d5, #ff28d5);
+  /* initial position */
+  bottom: 15%;
+  right: 25%;
+  transform: translate(0, 0);
+  animation: round-right 10s ease-in-out infinite;
+}
+
+.sphere-4 {
+  background: radial-gradient(circle, #28d4ff, #28d4ff);
+  /* initial position */
+  top: 15%;
+  left: 25%;
+  transform: translate(0, 0);
+  animation: round-left 10s ease-in-out infinite;
 }
 
 /* subtle wandering animations */
@@ -316,6 +333,25 @@ html {
   }
 }
 
+@keyframes round-left {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(100%, 200px);
+  }
+}
+
+@keyframes round-right {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-100%, -200px);
+  }
+}
 
 /* Cursor Bubbles */
 
@@ -343,8 +379,5 @@ html {
   opacity: 0.8;
 
   transform: translate(0, 0) scale(1);
-  transition:
-    transform 1.5s ease-out,
-    opacity 1.5s ease-out;
+  transition: transform 1.5s ease-out, opacity 1.5s ease-out;
 }
-
