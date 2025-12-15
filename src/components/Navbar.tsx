@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Logo from "@logos/egoronweb-logo.png";
+import CustomButton from "./CustomButton";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -34,7 +35,7 @@ export default function Navbar() {
               </a>
             ))}
             <a href="http://" target="_blank" rel="noopener noreferrer">
-            <button className="btn-accent">Contact Me</button></a>
+            <CustomButton variant="contained">Contact Me</CustomButton></a>
           </div>
 
           <div className="md:hidden">
