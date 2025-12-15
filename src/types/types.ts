@@ -1,18 +1,34 @@
 export type TechStackProps = {
-    name: string;
-    Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
-}
+  name: string;
+  Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+};
 
 export type ExperienceItemProps = {
-    title: string;
-    company?: string;
-    date: string;
-    description?: string;
-}
+  title: string;
+  company?: string;
+  date: string;
+  description?: string;
+};
 
 export type EducationProps = {
-    degree: string;
-    school?: string;
-    date: string;
-    description?: string;
-}
+  degree: string;
+  school?: string;
+  date: string;
+  description?: string;
+};
+
+export type ProjectProps = {
+  page: string;
+  title: string;
+  description: string;
+  image: string;
+};
+
+export type TestimonialProps = {
+  message: string;
+  image?: string;
+  name: string;
+  date: string;
+  rating: number;
+  role?: string;
+};
