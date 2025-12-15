@@ -7,19 +7,22 @@ import Testimonials from "./sections/Testimonials";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import CursorBubbles from "./components/CursorBubbles";
+import ToastNotificationContainer from "./components/ToastNotificationContainer";
 
 function App() {
   return (
     <>
+      {/* Toast Notification Container */}
+      <ToastNotificationContainer />
       <Navbar />
-      <CursorBubbles /> 
+      <CursorBubbles />
       <main className="min-w-screen container pt-[60px]">
-       <Hero />
-       <About />
-       <Experiences />
-       <Projects />
-       <Testimonials />
-       <Contact />
+        <Hero />
+        <About />
+        <Experiences />
+        <Projects />
+        <Testimonials />
+        <Contact />
       </main>
       <Footer />
     </>

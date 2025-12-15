@@ -24,6 +24,7 @@ import ViteIcon from "@icons/stacks/ViteIcon";
 import WordpressIcon from "@icons/stacks/WordpressIcon";
 import Portfolio from "@images/Portfolio.png";
 
+// Nav
  export const links = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
@@ -205,20 +206,20 @@ export const testimonials = [
     date: "January 24, 2025",
   },
   {
-    name: "Mike Johnson",
-    role: "Founder, StartupHub",
+    name: "Sarah Chen",
+    role: "Product Owner, InnovateLLC",
     message:
-      "Egoronweb's expertise in web development helped us launch our platform quickly and efficiently. Highly recommended!",
-    rating: 5,
-    date: "January 24, 2025",
+      "The dedication and communication from the team were exceptional. They turned our complex requirements into a seamless, high-performance product.",
+    rating: 4,
+    date: "February 10, 2025",
   },
   {
-    name: "Mike Johnson",
-    role: "Founder, StartupHub",
+    name: "David Lee",
+    role: "VP of Operations, GlobalFreight",
     message:
-      "Egoronweb's expertise in web development helped us launch our platform quickly and efficiently. Highly recommended!",
+      "Efren streamlined our entire logistics dashboard, resulting in a 30% increase in efficiency. A genuinely transformative partnership.",
     rating: 5,
-    date: "January 24, 2025",
+    date: "March 5, 2025",
   },
 ];
 
