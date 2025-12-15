@@ -25,7 +25,7 @@ export default function Footer() {
   const developerName = "Efren Goron";
 
   return (
-    <footer className="bg-gray-950/70 backdrop-blur-sm border-t border-gray-800 mt-28">
+    <footer className="bg-gray-950/70 backdrop-blur-sm border-t border-gray-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 py-10">
