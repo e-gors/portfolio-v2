@@ -7,7 +7,7 @@ import CustomButton from "@components/CustomButton";
 export default function Contacts() {
   return (
     <section
-      id="contacts"
+      id="contact"
       className="w-screen bg-primary relative mx-auto px-4 md:px-10 lg:px-20 py-12 gap-8 md:gap-12 z-1 flex flex-wrap overflow-hidden"
     >
       <div className="left flex-1">

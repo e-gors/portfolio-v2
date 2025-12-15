@@ -1,5 +1,5 @@
 import About from "./sections/About";
-import Contacts from "./sections/Contacts";
+import Contact from "./sections/Contact";
 import Experiences from "./sections/Experiences";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
@@ -19,7 +19,7 @@ function App() {
        <Experiences />
        <Projects />
        <Testimonials />
-       <Contacts />
+       <Contact />
       </main>
       <Footer />
     </>
