@@ -1,3 +1,8 @@
+export type LinkProps = {
+  name: string;
+  href: string;
+}
+
 export type TechStackProps = {
   name: string;
   Icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;

@@ -20,6 +20,15 @@ import ViteIcon from "@icons/stacks/ViteIcon";
 import WordpressIcon from "@icons/stacks/WordpressIcon";
 import Portfolio from "@images/Portfolio.png";
 
+ export const links = [
+    { name: "Home", href: "#home" },
+    { name: "About", href: "#about" },
+    { name: "Experiences", href: "#experiences" },
+    { name: "Projects", href: "#projects" },
+    { name: "Testimonials", href: "#testimonials" },
+    { name: "Contact", href: "#contact" },
+  ];
+
 // Tech Stacks Data
 export const TECH_STACKS = [
   {
