@@ -1,14 +1,14 @@
 import DoubleQuoteIcon from "@icons/DoubleQuoteIcon";
-import Person from "@images/person.svg";
+import Person from "@images/boy.png";
 import StarRatingDisplay from "./StarRatingDisplay";
 
 interface TestimonialCardProps {
-    message: string;
-    image?: string;
-    name: string;
-    date: string;
-    rating: number;
-    role?: string;
+  message: string;
+  image?: string;
+  name: string;
+  date: string;
+  rating: number;
+  role?: string;
 }
 export default function TestimonialCard(props: TestimonialCardProps) {
   return (
@@ -24,21 +24,14 @@ export default function TestimonialCard(props: TestimonialCardProps) {
       {/* Guest info: always at the bottom */}
       <div className="guest flex flex-wrap flex-row gap-2 items-center justify-between mt-4">
         <div className="left flex flex-wrap flex-row gap-2 items-center">
-          {props?.image ? (
- <img
-            src={props.image}
+          <img
+            src={props?.image ?? Person}
             alt="Person"
             className="w-10 h-10 rounded-full border border-accent p-1"
           />
-          ): (
-            <Person />
-          )}
-         
           <div className="guest-name">
             <p className="text-base font-semibold">{props.name}</p>
-            <span className="block text-xs text-gray-500">
-              {props.date}
-            </span>
+            <span className="block text-xs text-gray-500">{props.date}</span>
           </div>
         </div>
 
@@ -48,4 +41,3 @@ export default function TestimonialCard(props: TestimonialCardProps) {
     </div>
   );
 }
-
