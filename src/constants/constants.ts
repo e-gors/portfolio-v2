@@ -1,3 +1,7 @@
+import DiscordRoundedIcon from "@/assets/icons/DiscordRoundedIcon";
+import FacebookRoundedIcon from "@/assets/icons/FacebookRoundedIcon";
+import LinkedInRoundedIcon from "@/assets/icons/LinkedInRoundedIcon";
+import type { SocialLink } from "@/types/types";
 import AWSIcon from "@icons/stacks/AWSIcon";
 import BootStrapIcon from "@icons/stacks/BootStrapIcon";
 import CSSIcon from "@icons/stacks/CSSIcon";
@@ -216,4 +220,11 @@ export const testimonials = [
     rating: 5,
     date: "January 24, 2025",
   },
+];
+
+export const socialMediaLinks: SocialLink[] = [
+  { icon: GithubIcon, href: "https://github.com/e-gors", name: "GitHub" },
+  { icon: LinkedInRoundedIcon, href: "https://www.linkedin.com/in/efren-goron-8b3ab4200/", name: "LinkedIn" },
+  { icon: FacebookRoundedIcon, href: "https://www.facebook.com/efrentorrente.soritagoron", name: "Facebook" },
+  { icon: DiscordRoundedIcon, href: "https://discord.com/users/1449034762374086826", name: "Discord" },
 ];

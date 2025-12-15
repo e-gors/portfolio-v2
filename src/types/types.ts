@@ -37,3 +37,9 @@ export type TestimonialProps = {
   rating: number;
   role?: string;
 };
+
+export type SocialLink = {
+  icon: React.ElementType;
+  href: string;
+  name: string;
+}

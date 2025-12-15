@@ -1,11 +1,7 @@
 import AboutImage from "@images/about-image.png";
 import TitleHeader from "@components/TitleHeader";
-import GithubRoundedIcon from "@icons/GithubRoundedIcon";
-import FacebookRoundedIcon from "@icons/FacebookRoundedIcon";
-import LinkedInRoundedIcon from "@icons/LinkedInRoundedIcon";
-import DiscordRoundedIcon from "@icons/DiscordRoundedIcon";
 import GradientSphere from "@components/GradientSphere";
-import { TECH_STACKS } from "@constants/constants";
+import { socialMediaLinks, TECH_STACKS } from "@constants/constants";
 
 export default function About() {
   return (
@@ -42,18 +38,23 @@ export default function About() {
             learning and refining my craft to build impactful software.
           </p>
           <div className="flex gap-x-4 h-20 mt-5">
-            <div className="icon rounded-xl bg-white/5">
-              <FacebookRoundedIcon width={40} height={40} />
-            </div>
-            <div className="icon rounded-xl bg-white/5">
-              <GithubRoundedIcon width={60} />
-            </div>
-            <div className="icon rounded-xl bg-white/5">
-              <LinkedInRoundedIcon width={40} />
-            </div>
-            <div className="icon rounded-xl bg-white/5">
-              <DiscordRoundedIcon width={40} />
-            </div>
+            {socialMediaLinks.map((link) => {
+              const IconComponent = link.icon;
+              return (
+              <a
+                key={link.name}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon rounded-xl bg-white/5 hover:bg-white/10 transition"
+              >
+                <IconComponent
+                    width={40}
+                    height={40}
+                  />
+              </a>
+            )
+            })}
           </div>
         </div>
       </div>

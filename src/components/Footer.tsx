@@ -1,22 +1,5 @@
-import React from "react";
-
-import FacebookRoundedIcon from "../assets/icons/FacebookRoundedIcon";
-import GithubIcon from "../assets/icons/stacks/GithubIcon";
-import LinkedInRoundedIcon from "../assets/icons/LinkedInRoundedIcon";
-import DiscordRoundedIcon from "../assets/icons/DiscordRoundedIcon";
-
-interface SocialLink {
-  icon: React.ElementType;
-  href: string;
-  name: string;
-}
-
-const socialMediaLinks: SocialLink[] = [
-  { icon: GithubIcon, href: "https://github.com/e-gors", name: "GitHub" },
-  { icon: LinkedInRoundedIcon, href: "https://www.linkedin.com/in/efren-goron-8b3ab4200/", name: "LinkedIn" },
-  { icon: FacebookRoundedIcon, href: "https://www.facebook.com/efrentorrente.soritagoron", name: "Facebook" },
-  { icon: DiscordRoundedIcon, href: "https://discord.com/users/1449034762374086826", name: "Discord" },
-];
+import { socialMediaLinks } from "@/constants/constants";
+import type { SocialLink } from "@/types/types";
 
 const ACCENT_COLOR = "text-indigo-400";
 
@@ -40,7 +23,7 @@ export default function Footer() {
           </div>
 
           <div className="flex items-center space-x-5 order-1 md:order-3">
-            {socialMediaLinks.map((link) => {
+            {socialMediaLinks.map((link: SocialLink) => {
               const IconComponent = link.icon;
               return (
                 <a
