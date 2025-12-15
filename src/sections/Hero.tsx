@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import HeroImage from "@images/hero-image.png";
 import WavingHand from "@images/waving-hand.png";
-import GradientSphere from "../components/GradientSphere";
+import GradientSphere from "@components/GradientSphere";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import ArrowDownRoundedIcon from "../assets/icons/ArrowDownRoundedIcon";
+import ArrowDownRoundedIcon from "@icons/ArrowDownRoundedIcon";
 
 gsap.registerPlugin(useGSAP);
 

@@ -1,11 +1,11 @@
 import React from "react";
 import AboutImage from "@images/about-image.png";
-import TitleHeader from "../components/TitleHeader";
+import TitleHeader from "@components/TitleHeader";
 import GithubRoundedIcon from "@icons/GithubRoundedIcon";
 import FacebookRoundedIcon from "@icons/FacebookRoundedIcon";
 import LinkedInRoundedIcon from "@icons/LinkedInRoundedIcon";
 import DiscordRoundedIcon from "@icons/DiscordRoundedIcon";
-import GradientSphere from "../components/GradientSphere";
+import GradientSphere from "@components/GradientSphere";
 import { TECH_STACKS } from "@constants/constants";
 
 export default function About() {

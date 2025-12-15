@@ -1,4 +1,3 @@
-// Timeline.jsx
 import React from "react";
 import { TimelineItem } from "@components/TimelineItem";
 import { workExperience } from "@constants/constants";
@@ -6,7 +5,7 @@ import type { ExperienceItem } from "@types/types";
 import { education } from "@constants/constants";
 import type { EducationProps } from "@types/types";
 import GradientSphere from "@components/GradientSphere";
-import TitleHeader from "../components/TitleHeader";
+import TitleHeader from "@components/TitleHeader";
 
 const Experiences = () => {
   return (

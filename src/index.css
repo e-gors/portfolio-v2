@@ -276,7 +276,7 @@ html {
 /* Stack Icons */
 /* Container for all icons */
 .stack-icon-container {
-  animation: carousel 25s linear infinite;
+  animation: carousel 15s linear infinite;
 }
 
 /* Each icon wrapper */

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/logos/egoronweb-logo.png";
+import Logo from "@logos/egoronweb-logo.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
