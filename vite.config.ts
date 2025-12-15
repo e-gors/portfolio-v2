@@ -15,6 +15,7 @@ export default defineConfig({
       "@sections": path.resolve(__dirname, "./src/sections"),
       "@components": path.resolve(__dirname, "./src/components"),
       "@constants": path.resolve(__dirname, "./src/constants"),
+      "@types": path.resolve(__dirname, "./src/types"),
       "@utilities": path.resolve(__dirname, "./src/utilities"),
     },
     extensions: [".js", ".ts", ".jsx", ".tsx", ".json" ],
