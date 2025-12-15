@@ -18,6 +18,7 @@ import TypeScriptIcon from "@icons/stacks/TypeScriptIcon";
 import VercelIcon from "@icons/stacks/VercelIcon";
 import ViteIcon from "@icons/stacks/ViteIcon";
 import WordpressIcon from "@icons/stacks/WordpressIcon";
+import Portfolio from "@images/Portfolio.png";
 
 // Tech Stacks Data
 export const TECH_STACKS = [
@@ -120,7 +121,8 @@ export const workExperience = [
     title: "Intern - Fullstack Web Developer",
     company: "MLG College of Learning, Inc.",
     date: "July 2022 - Sept 2022",
-    description: "Developed seamless website frontend and backend for managing student records.",
+    description:
+      "Developed seamless website frontend and backend for managing student records.",
   },
 ];
 
@@ -135,6 +137,74 @@ export const education = [
     degree: "High School Diploma",
     school: "Hilongos National Vocational School",
     date: "2016 - 2019",
-    description: "Completed secondary education with a focus on science and technology.",
+    description:
+      "Completed secondary education with a focus on science and technology.",
+  },
+];
+
+export const projects = [
+  {
+    page: "Landing Page",
+    title: "Personal Portfolio",
+    description:
+      "A personal portfolio showcasing my skills, experience, and projects in web development and design.",
+    image: Portfolio,
+  },
+  {
+    page: "Landing Page",
+    title: "Personal Portfolio",
+    description:
+      "A personal portfolio showcasing my skills, experience, and projects in web development and design.",
+    image: Portfolio,
+  },
+  {
+    page: "Landing Page",
+    title: "Personal Portfolio",
+    description:
+      "A personal portfolio showcasing my skills, experience, and projects in web development and design.",
+    image: Portfolio,
+  },
+];
+
+export const testimonials = [
+  {
+    name: "John Doe",
+    role: "CEO, TechCorp",
+    message:
+      "I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on",
+    rating: 5,
+    date: "January 24, 2025",
+  },
+  {
+    name: "Jane Smith",
+    role: "Marketing Manager, CreativeSolutions",
+    message:
+      "WI was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project onign.",
+    rating: 5,
+    date: "January 24, 2025",
+  },
+  {
+    name: "Mike Johnson",
+    role: "Founder, StartupHub",
+    message:
+      "I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on time and within budget. I was impressed by the quality of work and the professionalism of the team. They delivered the project on!",
+    rating: 5,
+    date: "January 24, 2025",
+  },
+  {
+    name: "Mike Johnson",
+    role: "Founder, StartupHub",
+    message:
+      "Egoronweb's expertise in web development helped us launch our platform quickly and efficiently. Highly recommended!",
+    rating: 5,
+    date: "January 24, 2025",
+  },
+  {
+    name: "Mike Johnson",
+    role: "Founder, StartupHub",
+    message:
+      "Egoronweb's expertise in web development helped us launch our platform quickly and efficiently. Highly recommended!",
+    rating: 5,
+    date: "January 24, 2025",
   },
 ];
