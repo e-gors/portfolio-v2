@@ -50,7 +50,7 @@ export default function Contacts() {
             className="mb-4 p-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             rows={5}
           ></textarea>
-          <CustomButton variant="contained" className="w-[130px]">
+          <CustomButton variant="contained" className="max-w-[130px]">
             Send Message
           </CustomButton>
         </form>
