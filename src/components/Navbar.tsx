@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "@logos/egoronweb-logo.png";
 import CustomButton from "./CustomButton";
 import { links } from "@constants/constants";
-import type { LinkProps } from "@types/types";
+import type { LinkProps } from "@/types/types";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
