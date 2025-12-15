@@ -5,6 +5,7 @@ import GradientSphere from "@components/GradientSphere";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 import ArrowDownRoundedIcon from "@icons/ArrowDownRoundedIcon";
+import CustomButton from "@components/CustomButton";
 
 gsap.registerPlugin(useGSAP);
 
@@ -59,8 +60,8 @@ export default function Hero() {
           Aims to deliver high-quality web solutions tailored to your needs.
         </p>
         <div className="flex gap-x-4">
-          <button className="btn-accent">Services</button>
-          <button className="btn-outline">My Work</button>
+         <CustomButton variant="contained">Services</CustomButton>
+         <CustomButton variant="outlined">My Work</CustomButton>
         </div>
 
         <div className="w-100 px-4 flex items-center gap-2 mt-4 absolute bottom-4">
