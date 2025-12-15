@@ -1,4 +1,3 @@
-import React from "react";
 import EmailIcon from "@icons/EmailIcon";
 import PhoneIcon from "@icons/PhoneIcone";
 import LocationIcon from "@icons/LocationIcon";

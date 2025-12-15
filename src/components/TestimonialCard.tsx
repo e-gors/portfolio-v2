@@ -1,4 +1,3 @@
-import React from "react";
 import DoubleQuoteIcon from "@icons/DoubleQuoteIcon";
 import Person from "@images/person.svg";
 import StarRatingDisplay from "./StarRatingDisplay";
@@ -25,11 +24,16 @@ export default function TestimonialCard(props: TestimonialCardProps) {
       {/* Guest info: always at the bottom */}
       <div className="guest flex flex-wrap flex-row gap-2 items-center justify-between mt-4">
         <div className="left flex flex-wrap flex-row gap-2 items-center">
-          <img
-            src={props?.image ?? Person}
+          {props?.image ? (
+ <img
+            src={props.image}
             alt="Person"
             className="w-10 h-10 rounded-full border border-accent p-1"
           />
+          ): (
+            <Person />
+          )}
+         
           <div className="guest-name">
             <p className="text-base font-semibold">{props.name}</p>
             <span className="block text-xs text-gray-500">

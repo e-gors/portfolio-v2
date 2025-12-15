@@ -1,12 +1,9 @@
-import React from "react";
 import TitleHeader from "@components/TitleHeader";
 import GradientSphere from "@components/GradientSphere";
-import DoubleQuoteIcon from "@icons/DoubleQuoteIcon";
-import StarRatingDisplay from "@components/StarRatingDisplay";
 import TestimonialCard from "@components/TestimonialCard";
 import { testimonials } from "@constants/constants";
-import type { TestimonialProps } from "@types/types";
 import CustomButton from "@components/CustomButton";
+import type { TestimonialProps } from "@/types/types";
 
 export default function Testimonials() {
   return (

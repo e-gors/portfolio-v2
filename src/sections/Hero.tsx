@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import HeroImage from "@images/hero-image.png";
 import WavingHand from "@images/waving-hand.png";
 import GradientSphere from "@components/GradientSphere";

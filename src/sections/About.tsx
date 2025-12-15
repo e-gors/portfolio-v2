@@ -1,4 +1,3 @@
-import React from "react";
 import AboutImage from "@images/about-image.png";
 import TitleHeader from "@components/TitleHeader";
 import GithubRoundedIcon from "@icons/GithubRoundedIcon";

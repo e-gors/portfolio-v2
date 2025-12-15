@@ -1,11 +1,9 @@
-import React from "react";
 import { TimelineItem } from "@components/TimelineItem";
 import { workExperience } from "@constants/constants";
-import type { ExperienceItem } from "@types/types";
 import { education } from "@constants/constants";
-import type { EducationProps } from "@types/types";
 import GradientSphere from "@components/GradientSphere";
 import TitleHeader from "@components/TitleHeader";
+import type { ExperienceItemProps, EducationProps } from "@/types/types";
 
 const Experiences = () => {
   return (
@@ -16,7 +14,7 @@ const Experiences = () => {
         <div className="flex-1">
           <h2 className="text-2xl font-bold mb-6">Work Experience</h2>
           <div className="relative">
-            {workExperience.map((item: ExperienceItem, index: number) => (
+            {workExperience.map((item: ExperienceItemProps, index: number) => (
               <TimelineItem
                 key={index}
                 title={item.title}

@@ -1,11 +1,9 @@
-import React from "react";
 import GradientSphere from "@components/GradientSphere";
 import TitleHeader from "@components/TitleHeader";
 import CustomButton from "@components/CustomButton";
 import ArrowUpIcon from "@icons/ArrowUpIcon";
-import Portfolio from "@images/Portfolio.png";
 import { projects } from "@constants/constants";
-import type { ProjectProps } from "@types/types";
+import type { ProjectProps } from "@/types/types";
 
 export default function Projects() {
   return (
