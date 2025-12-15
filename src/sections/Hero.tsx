@@ -33,6 +33,10 @@ export default function Hero() {
     });
   });
 
+  const handleClick = (url: string) => {
+    window.location.href = url;
+  };
+
   return (
     <section
       id="home"
@@ -60,8 +64,18 @@ export default function Hero() {
           Aims to deliver high-quality web solutions tailored to your needs.
         </p>
         <div className="flex gap-x-4">
-         <CustomButton variant="contained">Services</CustomButton>
-         <CustomButton variant="outlined">My Work</CustomButton>
+          <CustomButton
+            variant="contained"
+            onClick={() => handleClick("/#services")}
+          >
+            Services
+          </CustomButton>
+          <CustomButton
+            variant="outlined"
+            onClick={() => handleClick("/#projects")}
+          >
+            My Work
+          </CustomButton>
         </div>
 
         <div className="w-100 px-4 flex items-center gap-2 mt-4 absolute bottom-4">
