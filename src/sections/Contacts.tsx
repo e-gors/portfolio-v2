@@ -34,7 +34,7 @@ export default function Contacts() {
         </div>
       </div>
       <div className="right flex-1">
-        <form className="flex flex-col max-w-lg">
+        <form className="flex flex-col">
           <input
             type="text"
             placeholder="Your Name"
