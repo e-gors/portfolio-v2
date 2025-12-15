@@ -44,6 +44,7 @@ const Experiences = () => {
           </div>
         </div>
       </div>
+      
       {/* Gradient Spheres */}
       <GradientSphere firstSphere="sphere-1" secondSphere="sphere-4" />
     </section>
