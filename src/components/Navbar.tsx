@@ -28,7 +28,7 @@ export default function Navbar() {
                 {l.name}
               </a>
             ))}
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:goronefren@gmail.com" target="_blank" rel="noopener noreferrer">
               <CustomButton variant="contained">Contact Me</CustomButton>
             </a>
           </div>
