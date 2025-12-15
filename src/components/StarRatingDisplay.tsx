@@ -1,5 +1,3 @@
-import React from "react";
-
 interface StarRatingDisplayProps {
   value: number; // current rating, e.g., 3
   max?: number;  // total stars, default 5

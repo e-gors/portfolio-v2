@@ -1,5 +1,3 @@
-import React from "react";
-
 interface GradientSphereProps {
   firstSphere: string;
   secondSphere: string;
