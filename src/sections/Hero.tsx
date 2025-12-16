@@ -13,42 +13,44 @@ export default function Hero() {
   const handRef = useRef<HTMLImageElement | null>(null);
   const arrowRef = useRef<SVGSVGElement | null>(null);
 
-  useGSAP(() => {
-    // hand waving
-    gsap.to(handRef.current, {
-      rotation: 20,
-      yoyo: true,
-      repeat: -1,
-      duration: 0.5,
-      ease: "power1.inOut",
-      transformOrigin: "70% 70%",
-    });
+  useGSAP(
+    () => {
+      // hand waving
+      gsap.to(handRef.current, {
+        rotation: 20,
+        yoyo: true,
+        repeat: -1,
+        duration: 0.5,
+        ease: "power1.inOut",
+        transformOrigin: "70% 70%",
+      });
 
-    // arrow bouncing
-    gsap.to(arrowRef.current, {
-      y: -5,
-      yoyo: true,
-      repeat: -1,
-      duration: 1,
-      ease: "power1.inOut",
-    });
+      // arrow bouncing
+      gsap.to(arrowRef.current, {
+        y: -5,
+        yoyo: true,
+        repeat: -1,
+        duration: 1,
+        ease: "power1.inOut",
+      });
 
-    // photo slide animation
-    gsap.from('.animated-photo', {
-     opacity: 0,
-      y: 100, 
-      duration: 2,
-      ease: 'power3.inOut',
-    })
-    // text slide animation
-    gsap.from('.animated-text', {
-      opacity: 0,
-      y: 50, 
-      stagger: 0.2,
-      duration: 1,
-      ease: 'power3.inOut',
-    })
-  }, []);
+      // photo slide animation
+      gsap.from(".animated-hero-photo", {
+        opacity: 0,
+        y: 100,
+        duration: 2,
+        ease: "power3.inOut",
+      });
+      // text slide animation
+      gsap.from(".animated-hero-text", {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        duration: 1,
+        ease: "power3.inOut",
+      });
+    },
+  );
 
   const handleClick = (url: string) => {
     window.location.href = url;
@@ -70,15 +72,11 @@ export default function Hero() {
           />
           <p className="text-base md:text-lg">I'm</p>
         </div>
-        <h1
-          className="animated-text w-full text-3xl md:text-6xl leading-normal font-bold"
-        >
+        <h1 className="animated-hero-text w-full text-3xl md:text-6xl leading-normal font-bold">
           Efren, a FullStack Software{" "}
           <span className="text-accent">Developer</span>
         </h1>
-        <p
-          className="animated-text text-base md:text-lg text-justify md:text-left"
-        >
+        <p className="animated-hero-text text-base md:text-lg text-justify md:text-left">
           A dedicated developer passionate about creating modern, user-friendly,
           and optimized websites with robust functionalities. Committed to
           learning new trends and technologies to continuously improve skills.
@@ -110,7 +108,7 @@ export default function Hero() {
           loading="lazy"
           src={HeroImage}
           alt="hero"
-          className="animated-photo max-w-full h-auto w-[280px] md:w-[420px] lg:w-[520px]"
+          className="animated-hero-photo max-w-full h-auto w-[280px] md:w-[420px] lg:w-[520px]"
         />
       </div>
 
