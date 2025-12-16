@@ -38,7 +38,7 @@ export default function About() {
         start: 'top center',
       }
     });
-  }, []);
+  });
 
   return (
     <section

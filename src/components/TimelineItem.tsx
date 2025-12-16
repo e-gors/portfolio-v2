@@ -3,6 +3,7 @@ interface TimelineItemProps {
   subtitle?: string;
   date: string;
   description?: string;
+  className?: string;
 }
 
 export const TimelineItem = ({
@@ -10,8 +11,9 @@ export const TimelineItem = ({
   subtitle,
   date,
   description,
+  className
 }: TimelineItemProps) => (
-  <div className="relative pl-8 mb-8">
+  <div className={`relative pl-8 mb-8 ${className}`}>
     <div className="absolute left-0 top-0 w-4 h-4 bg-primary rounded-full border-2 border-accent"></div>
     <div className="border-l-2 border-accent absolute left-2 top-4 h-full"></div>
     <div className="bg-gray-800/20 p-4 rounded-xl hover:bg-gray-800/40 transition">

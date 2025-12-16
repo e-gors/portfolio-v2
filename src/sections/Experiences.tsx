@@ -4,8 +4,30 @@ import { education } from "@constants/constants";
 import GradientSphere from "@components/GradientSphere";
 import TitleHeader from "@components/TitleHeader";
 import type { ExperienceItemProps, EducationProps } from "@/types/types";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 const Experiences = () => {
+
+   useGSAP(() => {
+    // card slide animation
+    gsap.from(".animated-experience-card", {
+      opacity: 0,
+      y: 50,
+      stagger: 0.3,
+      duration: 1,
+      ease: "power3.inOut",
+      scrollTrigger: {
+        trigger: '#experiences',
+        start: 'top center',
+      }
+    });
+  });
+
   return (
     <section id="experiences" className="w-screen relative mx-auto px-4 md:px-10 lg:px-20 py-12 gap-8 md:gap-12 z-1">
       <TitleHeader title="My Experiences" number="02" />
@@ -21,6 +43,7 @@ const Experiences = () => {
                 subtitle={item.company}
                 date={item.date}
                 description={item.description}
+                className="animated-experience-card"
               />
             ))}
           </div>
@@ -37,6 +60,7 @@ const Experiences = () => {
                 subtitle={item.school}
                 date={item.date}
                 description={item.description}
+                className="animated-experience-card"
               />
             ))}
           </div>
