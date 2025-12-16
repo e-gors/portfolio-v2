@@ -18,8 +18,21 @@ const Experiences = () => {
     gsap.from(".animated-experience-card", {
       opacity: 0,
       y: 50,
-      stagger: 0.3,
+      stagger: 1.1,
       duration: 1,
+      ease: "power3.inOut",
+      scrollTrigger: {
+        trigger: '#experiences',
+        start: 'top center',
+      }
+    });
+
+     // text slide animation
+    gsap.from(".animated-experience-text", {
+      opacity: 0,
+      y: 50,
+      stagger: 0.3,
+      duration: 0.5,
       ease: "power3.inOut",
       scrollTrigger: {
         trigger: '#experiences',
@@ -43,7 +56,6 @@ const Experiences = () => {
                 subtitle={item.company}
                 date={item.date}
                 description={item.description}
-                className="animated-experience-card"
               />
             ))}
           </div>
@@ -60,7 +72,6 @@ const Experiences = () => {
                 subtitle={item.school}
                 date={item.date}
                 description={item.description}
-                className="animated-experience-card"
               />
             ))}
           </div>
