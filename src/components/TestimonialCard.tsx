@@ -25,6 +25,7 @@ export default function TestimonialCard(props: TestimonialCardProps) {
       <div className="guest flex flex-wrap flex-row gap-2 items-center justify-between mt-4">
         <div className="left flex flex-wrap flex-row gap-2 items-center">
           <img
+            loading="lazy"
             src={props?.image ?? Person}
             alt="Person"
             className="w-10 h-10 rounded-full border border-accent p-1"

@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="#">
-              <img src={Logo} alt="Logo" className="w-12" />
+              <img loading="lazy" src={Logo} alt="Logo" className="w-12" />
             </a>
           </div>
 

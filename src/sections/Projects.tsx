@@ -35,7 +35,7 @@ export default function Projects() {
               </CustomButton>
             </div>
             <div className="right flex-1 rounded-lg overflow-hidden shadow-card">
-              <img src={project.image} alt="Project" />
+              <img loading="lazy" src={project.image} alt="Project" />
             </div>
           </div>
         ))}

@@ -86,6 +86,7 @@ export default function Hero() {
 
       <div className="right w-full lg:w-1/2 flex items-center justify-center">
         <img
+        loading="lazy"
           src={HeroImage}
           alt="hero"
           className="max-w-full h-auto w-[280px] md:w-[420px] lg:w-[520px]"
