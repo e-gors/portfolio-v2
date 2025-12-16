@@ -23,7 +23,7 @@ export default function Testimonials() {
             can add feedback if we are collaborating recently. Your feedback is
             important for me.
           </h3>
-          <div className="flex flex-wrap flex-row mt-3 gap-2">
+          <div className="w-screen flex flex-wrap flex-row mt-3 gap-x-4">
             <CustomButton variant="contained">Write a Feedback</CustomButton>
             <CustomButton variant="outlined">Edit My Feedback</CustomButton>
           </div>
