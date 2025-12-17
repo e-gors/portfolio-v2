@@ -23,6 +23,7 @@ import VercelIcon from "@icons/stacks/VercelIcon";
 import ViteIcon from "@icons/stacks/ViteIcon";
 import WordpressIcon from "@icons/stacks/WordpressIcon";
 import Portfolio from "@images/Portfolio.png";
+import Lumiere from "@images/Lumiere.png";
 
 // Nav
  export const links = [
@@ -166,17 +167,10 @@ export const projects = [
   },
   {
     page: "Landing Page",
-    title: "Personal Portfolio",
+    title: "Lumiere",
     description:
-      "A personal portfolio showcasing my skills, experience, and projects in web development and design.",
-    image: Portfolio,
-  },
-  {
-    page: "Landing Page",
-    title: "Personal Portfolio",
-    description:
-      "A personal portfolio showcasing my skills, experience, and projects in web development and design.",
-    image: Portfolio,
+      "An online rental platform for booking gowns, decorations, and other event must-haves.",
+    image: Lumiere,
   },
 ];
 
