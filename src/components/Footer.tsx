@@ -9,9 +9,9 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-950/70 backdrop-blur-sm border-t border-gray-800">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto">
         
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 py-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 py-10 px-0 md:px-10 lg:px-18">
 
           <div className="flex flex-col text-center md:text-left order-2 md:order-1">
             <span className={`text-xl font-bold tracking-tight text-accent ${ACCENT_COLOR}`}>
