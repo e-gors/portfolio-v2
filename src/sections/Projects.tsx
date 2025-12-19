@@ -12,7 +12,7 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Projects() {
-   useGSAP(() => {
+  useGSAP(() => {
     // card slide animation
     gsap.from(".animated-project-card", {
       opacity: 0,
@@ -21,12 +21,12 @@ export default function Projects() {
       duration: 3,
       ease: "power3.inOut",
       scrollTrigger: {
-        trigger: '#projects',
-        start: 'top center',
-      }
+        trigger: "#projects",
+        start: "top center",
+      },
     });
 
-     // text slide animation
+    // text slide animation
     gsap.from(".animated-project-text", {
       opacity: 0,
       y: 50,
@@ -34,11 +34,15 @@ export default function Projects() {
       duration: 0.5,
       ease: "power3.inOut",
       scrollTrigger: {
-        trigger: '#projects',
-        start: 'top center',
-      }
+        trigger: "#projects",
+        start: "top center",
+      },
     });
   });
+
+  const handleNavigate = (link: string) => {
+    window.open(link, "_blank", "noopener,noreferrer");
+  };
 
   return (
     <section
@@ -49,13 +53,16 @@ export default function Projects() {
 
       <div className="content flex flex-col gap-10 pt-5">
         {projects.map((project: ProjectProps, index: number) => (
-          <div className="flex flex-wrap flex-col md:flex-row gap-6 md:gap-12" key={index}>
+          <div
+            className="flex flex-wrap flex-col md:flex-row gap-6 md:gap-12"
+            key={index}
+          >
             <div className="left flex-1">
               <p className="animated-project-text text-base md:text-lg font-semibold pb-2">
-             {project.page}
+                {project.page}
               </p>
               <h3 className="animated-project-text text-xl md:text-1xl font-bold">
-             {project.title}
+                {project.title}
               </h3>
               <p className="animated-project-text text-base md:text-lg max-w-xl">
                 {project.description}
@@ -64,6 +71,7 @@ export default function Projects() {
                 className="pt-2 animated-project-text"
                 variant="text"
                 endIcon={<ArrowUpIcon width={24} height={24} />}
+                onClick={() => handleNavigate(project.link)}
               >
                 View Live
               </CustomButton>
@@ -74,7 +82,7 @@ export default function Projects() {
           </div>
         ))}
       </div>
-      
+
       {/* Gradient Spheres */}
       <GradientSphere firstSphere="sphere-1" secondSphere="sphere-2" />
     </section>

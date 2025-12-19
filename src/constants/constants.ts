@@ -164,6 +164,7 @@ export const projects = [
     description:
       "A personal portfolio showcasing my skills, experience, and projects in web development and design.",
     image: Portfolio,
+    link: "#"
   },
   {
     page: "Landing Page",
@@ -171,6 +172,7 @@ export const projects = [
     description:
       "An online rental platform for booking gowns, decorations, and other event must-haves.",
     image: Lumiere,
+    link: "https://lumiere-app-theta.vercel.app/"
   },
 ];
 
