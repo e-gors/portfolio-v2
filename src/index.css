@@ -466,3 +466,12 @@ html {
   left: 10px;
   top: -15px;
 }
+
+/* Custom scrollbar for the modal content */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5); /* gray-400 with opacity */
+  border-radius: 10px;
+}
