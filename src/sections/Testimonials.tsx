@@ -9,7 +9,7 @@ import ProfileImageUpload from "@/components/ProfileImageUpload";
 import DefaultPerson from "@images/boy.png";
 import StarRating from "@/components/StarRating";
 import supabase from "@/config/supabase-client";
-import { convertDate, getAvatar } from "@/utilities";
+import { convertDate, getAvatar, getErrorMessage } from "@/utilities";
 import { options, ToastNotification } from "@/utilities/toastUtils";
 
 interface FeedbackProps {
@@ -51,7 +51,7 @@ export default function Testimonials() {
       if (error) throw error;
 
       if (data) {
-        const formattedData = data.map((item: any) => ({
+        const formattedData = data.map((item: FeedbackProps) => ({
           first_name: item.first_name,
           last_name: item.last_name,
           feedback: item.feedback,
@@ -61,8 +61,8 @@ export default function Testimonials() {
         }));
         setFeedbacks(formattedData);
       }
-    } catch (error: any) {
-      ToastNotification("error", error.message, options);
+    } catch (error: unknown) {
+      ToastNotification("error", getErrorMessage(error), options);
     } finally {
       setIsLoading(false);
     }
@@ -154,10 +154,10 @@ export default function Testimonials() {
 
       setPublicImagePath("");
       fetchFeedbacks(); // Refresh the list
-    } catch (error: any) {
+    } catch (error: unknown) {
         ToastNotification(
         "error",
-        error.message,
+        getErrorMessage(error),
         options
       );
     } finally {
