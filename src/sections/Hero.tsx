@@ -85,9 +85,9 @@ export default function Hero() {
         <div className="flex gap-x-4">
           <CustomButton
             variant="contained"
-            onClick={() => handleClick("/#services")}
+            onClick={() => handleClick("/#experiences")}
           >
-            Services
+            My Work Experience
           </CustomButton>
           <CustomButton
             variant="outlined"
