@@ -41,7 +41,9 @@ export default function Projects() {
   });
 
   const handleNavigate = (link: string) => {
-    window.open(link, "_blank", "noopener,noreferrer");
+    if (link) {
+      window.open(link, "_blank", "noopener,noreferrer");
+    }
   };
 
   return (

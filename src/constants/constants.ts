@@ -164,7 +164,7 @@ export const projects = [
     description:
       "A personal portfolio showcasing my skills, experience, and projects in web development and design.",
     image: Portfolio,
-    link: "#"
+    link: ""
   },
   {
     page: "Landing Page",
