@@ -28,6 +28,7 @@ export type ProjectProps = {
   description: string;
   image: string;
   link: string;
+  note?: string;
 };
 
 export type TestimonialProps = {

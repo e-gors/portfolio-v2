@@ -78,8 +78,22 @@ export default function Projects() {
                 View Live
               </CustomButton>
             </div>
-            <div className="animated-project-card right flex-1 rounded-lg overflow-hidden shadow-card">
-              <img loading="lazy" src={project.image} alt="Project" />
+            <div className="animated-project-card right flex-1 rounded-lg overflow-hidden shadow-card relative">
+              <img
+                loading="lazy"
+                src={project.image}
+                alt="Project"
+                className="w-full h-full object-cover"
+              />
+
+              {/* Overlay if note exists */}
+              {project.note && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black/60">
+                  <p className="text-white text-center text-sm md:text-base font-semibold px-4">
+                    {project.note}
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         ))}

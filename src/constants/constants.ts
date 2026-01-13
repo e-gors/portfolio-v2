@@ -24,16 +24,17 @@ import ViteIcon from "@icons/stacks/ViteIcon";
 import WordpressIcon from "@icons/stacks/WordpressIcon";
 import Portfolio from "@images/Portfolio.png";
 import Lumiere from "@images/Lumiere.png";
+import LumiereAdmin from "@images/Lumiere-admin.png";
 
 // Nav
- export const links = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#about" },
-    { name: "Experiences", href: "#experiences" },
-    { name: "Projects", href: "#projects" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" },
-  ];
+export const links = [
+  { name: "Home", href: "#home" },
+  { name: "About", href: "#about" },
+  { name: "Experiences", href: "#experiences" },
+  { name: "Projects", href: "#projects" },
+  { name: "Testimonials", href: "#testimonials" },
+  { name: "Contact", href: "#contact" },
+];
 
 // Tech Stacks Data
 export const TECH_STACKS = [
@@ -164,7 +165,7 @@ export const projects = [
     description:
       "A personal portfolio showcasing my skills, experience, and projects in web development and design.",
     image: Portfolio,
-    link: ""
+    link: "",
   },
   {
     page: "Landing Page",
@@ -172,7 +173,17 @@ export const projects = [
     description:
       "An online rental platform for booking gowns, decorations, and other event must-haves.",
     image: Lumiere,
-    link: "https://lumiere-app-theta.vercel.app/"
+    link: "https://lumiere-app-theta.vercel.app/",
+    note: "This project is currently under active development. Components and features are continuously being improved."
+  },
+  {
+    page: "Admin Dashboard",
+    title: "Lumiere Admin",
+    description:
+      "An administrative dashboard for managing bookings, rentals, and inventory of gowns and event décor",
+    image: LumiereAdmin,
+    link: "",
+    note: "This project is currently under active development. Components and features are continuously being improved."
   },
 ];
 
@@ -221,7 +232,19 @@ export const testimonials = [
 
 export const socialMediaLinks: SocialLink[] = [
   { icon: GithubIcon, href: "https://github.com/e-gors", name: "GitHub" },
-  { icon: LinkedInRoundedIcon, href: "https://www.linkedin.com/in/efren-goron-8b3ab4200/", name: "LinkedIn" },
-  { icon: FacebookRoundedIcon, href: "https://www.facebook.com/efrentorrente.soritagoron", name: "Facebook" },
-  { icon: DiscordRoundedIcon, href: "https://discord.com/users/1449034762374086826", name: "Discord" },
+  {
+    icon: LinkedInRoundedIcon,
+    href: "https://www.linkedin.com/in/efren-goron-8b3ab4200/",
+    name: "LinkedIn",
+  },
+  {
+    icon: FacebookRoundedIcon,
+    href: "https://www.facebook.com/efrentorrente.soritagoron",
+    name: "Facebook",
+  },
+  {
+    icon: DiscordRoundedIcon,
+    href: "https://discord.com/users/1449034762374086826",
+    name: "Discord",
+  },
 ];
