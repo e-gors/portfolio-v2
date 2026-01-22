@@ -122,19 +122,19 @@ export const TECH_STACKS = [
 
 export const workExperience = [
   {
-    title: "Junior Full Stack Engineer",
+    title: "Junior Full-Stack Software Engineer",
     company: "JLabs",
     date: "Nov 2024 - Apr 2025",
     description: "Working with React and NestJS to develop web applications.",
   },
   {
-    title: "Junior Fullstack Web Developer",
+    title: "Junior Full-Stack Web Developer",
     company: "CreativeDevLabs",
     date: "Nov 2022 - Jan 2023",
     description: "Assisted in building ticketing platforms and APIs.",
   },
   {
-    title: "Intern - Fullstack Web Developer",
+    title: "Intern - Full-Stack Web Developer",
     company: "MLG College of Learning, Inc.",
     date: "July 2022 - Sept 2022",
     description:
