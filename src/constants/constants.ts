@@ -173,7 +173,7 @@ export const projects = [
     description:
       "An online rental platform for booking gowns, decorations, and other event must-haves.",
     image: Lumiere,
-    link: "https://lumiere-app-theta.vercel.app/",
+    link: "",
     note: "This project is currently under active development. Components and features are continuously being improved."
   },
   {
