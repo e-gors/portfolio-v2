@@ -25,6 +25,7 @@ import WordpressIcon from "@icons/stacks/WordpressIcon";
 import Portfolio from "@images/Portfolio.png";
 import Lumiere from "@images/Lumiere.png";
 import LumiereAdmin from "@images/Lumiere-admin.png";
+import ManilaFame from "@images/Manila-fame.png";
 
 // Nav
 export const links = [
@@ -174,7 +175,7 @@ export const projects = [
       "An online rental platform for booking gowns, decorations, and other event must-haves.",
     image: Lumiere,
     link: "",
-    note: "This project is currently under active development. Components and features are continuously being improved."
+    note: "This project is currently under active development. Components and features are continuously being improved.",
   },
   {
     page: "Admin Dashboard",
@@ -183,7 +184,16 @@ export const projects = [
       "An administrative dashboard for managing bookings, rentals, and inventory of gowns and event décor",
     image: LumiereAdmin,
     link: "",
-    note: "This project is currently under active development. Components and features are continuously being improved."
+    note: "This project is currently under active development. Components and features are continuously being improved.",
+  },
+  {
+    page: "Landing Page",
+    title: "Manila Fame",
+    description:
+      "Manila FAME is Asia's premier lifestyle and design trade show. Source unique, handcrafted pieces from the Philippines' most innovative artisans and sustainable manufacturers.",
+    image: ManilaFame,
+    link: "",
+    note: "",
   },
 ];
 
