@@ -192,7 +192,7 @@ export const projects = [
     description:
       "Manila FAME is Asia's premier lifestyle and design trade show. Source unique, handcrafted pieces from the Philippines' most innovative artisans and sustainable manufacturers.",
     image: ManilaFame,
-    link: "",
+    link: "https://manila-fame.netlify.app/",
     note: "",
   },
 ];
